@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novel Previews and Storylines</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('bookcollage.webp'); /* Set bookcollage.webp as the background */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #333;
+        }
+        header {
+            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            backdrop-filter: blur(5px); /* Adds a blur effect */
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+        .category {
+            margin-bottom: 40px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(5px); /* Adds a blur effect */
+        }
+        .category h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+        .novel-card {
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque white background */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: calc(33.33% - 14px);
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            box-sizing: border-box;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .novel-card:hover {
+            transform: translateY(-10px); /* Adds a hover effect */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .novel-card img {
+            max-width: 100%;
+            border-radius: 8px;
+            height: 300px; /* Fixed height for uniformity */
+            object-fit: cover; /* Ensures images fit well */
+        }
+        .novel-card h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #333; /* Dark text for contrast */
+        }
+        .novel-card p {
+            font-size: 1em;
+            color: #555; /* Slightly lighter text */
+        }
+        .novel-card .author {
+            font-style: italic;
+            color: #777; /* Light gray for author name */
+        }
+
+        /* Responsive Design for Smaller Screens */
+        @media (max-width: 768px) {
+            .novel-card {
+                width: calc(50% - 10px); /* Two cards in a row for tablets */
+            }
+        }
+        @media (max-width: 480px) {
+            .novel-card {
+                width: 100%; /* One card in a row for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Novel Previews and Storylines</h1>
+    </header>
+
+    <div class="container">
+        <!-- Thriller Category -->
+        <div class="category">
+            <h2>Thriller</h2>
+            <div class="novel-card">
+                <img src="verity.jpg" alt="Verity by Colleen Hoover">
+                <h3>Verity</h3>
+                <p class="author">By Colleen Hoover</p>
+                <p>Lowen Ashleigh is a struggling writer on the brink of financial ruin when she accepts the job offer of a lifetime. Jeremy Crawford, husband of bestselling author Verity Crawford, has hired Lowen to complete the remaining books in a successful series his injured wife is unable to finish.</p>
+            </div>
+            <div class="novel-card">
+                <img src="silentpatient.jpj.webp" alt="Silent Patient by Alex Michaelides">
+                <h3>Silent Patient</h3>
+                <p class="author">By Alex Michaelides</p>
+                <p>A majority of “The Silent Patient” is set in a psychiatric unit called The Grove that is dedicated to helping the troubled minds that inhabit it. The story focuses on a specific patient, Alicia Berenson, who, after murdering her husband, goes silent and doesn't speak a word.</p>
+            </div>
+            <div class="novel-card">
+                <img src="GirlOnThetrain.jpg" alt="The Girl on the Train by Paula Hawkins">
+                <h3>The Girl on the Train</h3>
+                <p class="author">By Paula Hawkins</p>
+                <p>Rachel, a troubled woman who takes the same train every day, becomes entangled in a missing person investigation that changes her life forever.</p>
+            </div>
+            <div class="novel-card">
+                <img src="400days.jpg" alt="400 Days by Chetan Bhagat">
+                <h2>400 Days</h2>
+                <p class="author">By Chetan Bhagat</p>
+                <p>'400 Days' is the story of Alia, a mother who is determined to find her missing son while grappling with a failing marriage and individuality. Keshav Rajpurohit, Alia's neighbor and owner of a detective agency, helps in her quest.</p>
+            </div>
+        </div>
+
+        <!-- Fiction Category -->
+        <div class="category">
+            <h2>Fiction</h2>
+            <div class="novel-card">
+                <img src="sorcerer'sstone.jpg" alt="Harry Potter and the Sorcerer's Stone by JK Rowling">
+                <h3>Harry Potter and the Sorcerer's Stone</h3>
+                <p class="author">By JK Rowling</p>
+                <p>Harry Potter discovers he is a wizard and begins his journey at Hogwarts School of Witchcraft and Wizardry. Alongside new friends, he uncovers the mystery of the Sorcerer's Stone.</p>
+            </div>
+            <div class="novel-card">
+                <img src="ChamberOfSecrets.jpg" alt="Harry Potter and the Chamber of Secrets by JK Rowling">
+                <h3>Harry Potter and the Chamber of Secrets</h3>
+                <p class="author">By JK Rowling</p>
+                <p>The plot follows Harry's second year at Hogwarts School of Witchcraft and Wizardry, during which a series of messages on the walls of the school's corridors warn that the "Chamber of Secrets" has been opened and that the "heir of Slytherin" would kill all pupils who do not come from all-magical families.</p>
+            </div>
+            <div class="novel-card">
+                <img src="PrisonerOfAzkaban.jpg" alt="Harry Potter and the Prisoner of Azkaban by JK Rowling">
+                <h3>Harry Potter and the Prisoner of Azkaban</h3>
+                <p class="author">By JK Rowling</p>
+                <p>Harry Potter's third year at Hogwarts starts off badly when he learns deranged killer Sirius Black has escaped from Azkaban prison and is bent on murdering the teenage wizard.</p>
+            </div>
+              <!-- Harry Potter and the Philosopher's Stone-->
+        <div class="novel-card">
+            <img src="PhillosophersStone.jpg" alt="Harry Potter and the Philosopher's Stone by JK Rowling">
+            <h2>Harry Potter and the Philosopher's Stone</h2>
+            <p class="author">by JK Rowling</p>
+            <p>Adaptation of the first of J.K. Rowling's popular children's novels about Harry Potter, a boy who learns on his eleventh birthday that he is the orphaned son of two powerful wizards and possesses unique magical powers of his own. He is summoned from his life as an unwanted child to become a student at Hogwarts, an English boarding school for wizards. There, he meets several friends who become his closest allies and help him discover the truth about his parents' mysterious deaths.</p>
+            </div>
+             <!-- Harry Potter and The Goblet of Fire-->
+        <div class="novel-card">
+            <img src="GobletOfFire.jpg" alt="Harry Potter and The Goblet of Fire by JK Rowling">
+            <h2>Harry Potter and The Goblet of Fire</h2>
+            <p class="author">by JK Rowling</p>
+            <p>Harry is mysteriously selected to compete in the prestigious Triwizard Tournament, a thrilling competition that pits him against more experienced students from Hogwarts and two rival wizarding schools. Meanwhile, supporters of the evil Lord Voldemort send a shockwave of fear throughout the wizard community when their Dark Mark scorches the sky at the Quidditch World Cup, signalling a return to power.</p>
+            </div>
+              <!-- Harry Potter and  The Half-Blood Prince-->
+        <div class="novel-card">
+            <img src="HalfBloodprince.jpg" alt="Harry Potter and  The Half-Blood Prince by JK Rowling">
+            <h2>Harry Potter and  The Half-Blood Prince</h2>
+            <p class="author">by JK Rowling</p>
+            <p>As Death Eaters wreak havoc in both Muggle and Wizard worlds, Hogwarts is no longer a safe haven for students. Though Harry suspects there are new dangers lurking within the castle walls, Dumbledore is more intent than ever on preparing the young wizard for the final battle with Voldemort. Teenage hormones run rampant through Hogwarts, presenting a different sort of danger. Love may be in the air, but tragedy looms and Hogwarts may never be the same again.</p>
+            </div>
+            <!-- Harry Potter and the Deathly Hallows:1-->
+        <div class="novel-card">
+            <img src="DeathlyHallows1.webp" alt="Harry Potter and the Deathly Hallows:1 by JK Rowling">
+            <h2>Harry Potter and the Deathly Hallows:1</h2>
+            <p class="author">by JK Rowling</p>
+            <p>Without the guidance and protection of their professors, Harry (Daniel Radcliffe), Ron (Rupert Grint) and Hermione (Emma Watson) begin a mission to destroy the Horcruxes, the sources of Voldemort's immortality. Though they must rely on one another more than ever, dark forces threaten to tear them apart. Voldemort's Death Eaters have seized control of the Ministry of Magic and Hogwarts, and they are searching for Harry -- even as he and his friends prepare for the ultimate showdown.</p>
+            </div>
+            
+                <!-- Harry Potter and the Deathly Hallows: Part 2 -->
+                <div class="novel-card">
+                    <img src="DeathlyHallow2.jpg" alt="Harry Potter and the Deathly Hallows: Part 2">
+                    <h2>Harry Potter and the Deathly Hallows: Part 2</h2>
+                    <p class="author">By J.K. Rowling</p>
+                    <p>In the epic finale of the Harry Potter series, Harry, Ron, and Hermione continue their quest to find and destroy Voldemort's Horcruxes. The battle between good and evil reaches its climax at Hogwarts.</p>
+                </div>
+        </div>
+
+        <!-- Crime Category -->
+        <div class="category">
+            <h2>Crime</h2>
+            <div class="novel-card">
+                <img src="good-girls-guide.jpg" alt="A Good Girl's Guide to Murder by Holly Jackson">
+                <h3>A Good Girl's Guide to Murder</h3>
+                <p class="author">By Holly Jackson</p>
+                <p>Pippa Fitz-Amobi is determined to uncover the truth behind a closed murder case for her final year project. As she digs deeper, she realizes that the case might not be as straightforward as it seems, and her own life could be in danger.</p>
+            </div>
+            <div class="novel-card">
+                <img src="GoodGirl.jpg" alt="Good Girl, Bad Blood by Holly Jackson">
+                <h3>Good Girl, Bad Blood</h3>
+                <p class="author">By Holly Jackson</p>
+                <p>Pip Fitz-Amobi returns in this thrilling sequel to "A Good Girl's Guide to Murder." When a local boy goes missing, Pip is drawn into a new investigation that uncovers dark secrets.</p>
+            </div>
+            <div class="novel-card">
+                <img src="murderontheorientexpress.webp" alt="Murder on the Orient Express by Agatha Christie">
+                <h3>Murder on the Orient Express</h3>
+                <p class="author">By Agatha Christie</p>
+                <p>Detective Hercule Poirot investigates the murder of a passenger aboard the luxurious Orient Express. The case becomes one of his most puzzling and famous mysteries.</p>
+            </div>
+        </div>
+
+        <!-- Rom-Com Category -->
+        <div class="category">
+            <h2>Rom-Com</h2>
+            <div class="novel-card">
+                <img src="LoveHypothesis.jpj.jpg" alt="Love Hypothesis by Ali Hazelwood">
+                <h3>Love Hypothesis</h3>
+                <p class="author">By Ali Hazelwood</p>
+                <p>The Love Hypothesis follows Olive, a PhD student who wants to prove to her best friend that she has moved on and is dating. With no way to prove it, she kisses the first man she sees, which ends up being none other than Dr. Carlsen, known as one of the most unapproachable and critical professors.</p>
+            </div>
+            <div class="novel-card">
+                <img src="SpanishLove.jpg" alt="Spanish Love Deception by Elena Armas">
+                <h3>Spanish Love Deception</h3>
+                <p class="author">By Elena Armas</p>
+                <p>Catalina Martín desperately needs a date to her sister's wedding. Especially since her little white lie about her American boyfriend has spiralled out of control. Now everyone she knows—including her ex and his fiancée—will be there and eager to meet him.</p>
+            </div>
+            <div class="novel-card">
+                <img src="twisted-series.jpg" alt="Twisted Series by Ana Huang">
+                <h3>Twisted Series</h3>
+                <p class="author">By Ana Huang</p>
+                <p>The Twisted Series is a collection of steamy romance novels that explore love, passion, and the complexities of relationships. Each book in the series follows a different couple as they navigate their way through life's challenges and find love in unexpected places.</p>
+            </div>
+        </div>
+         <!-- DarkRomance Category -->
+         <div class="category">
+            <h2>DarkRomance</h2>
+          <!-- Haunting Adeline -->
+          <div class="novel-card">
+            <img src="haunting_adeline.webp" alt="Haunting Adeline">
+            <h2>Haunting Adeline</h2>
+            <p class="author">By H.D. Carlton</p>
+            <p>Adeline's life takes a dark turn when she becomes the target of a stalker. This psychological thriller explores themes of obsession, fear, and survival.</p>
+        </div>
+
+        <!-- Hunting Adeline -->
+        <div class="novel-card">
+            <img src="HuntingAdeline.webp" alt="Hunting Adeline">
+            <h2>Hunting Adeline</h2>
+            <p class="author">By H.D. Carlton</p>
+            <p>The sequel to "Haunting Adeline," this book delves deeper into Adeline's fight for survival as she confronts her darkest fears and enemies.</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
